@@ -1,0 +1,65 @@
+.main-header {
+  background-color: #0c3c78;
+  padding: 20px 0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.logo-zone {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: #ffffff22;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #ffffff44;
+}
+
+.nav-btn.active {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.nav-btn.logout {
+  background-color: #f44336;
+  color: white;
+}
+
+.nav-btn.logout:hover {
+  background-color: #e53935;
+}

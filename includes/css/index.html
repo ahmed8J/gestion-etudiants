@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="logo">SchoolX</div>
+    </div>
+    <div class="topbar-center">
+      <div class="topbar-search">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Rechercher...">
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="line-container" onclick="toggleMenu(this)">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="menu-top">
+      <div class="menu-search">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Recherche...">
+      </div>
+    </div>
+    <div class="menu-center">
+      <div class="menu-item"><span>🏠 Accueil</span></div>
+      <div class="menu-item"><span>👨‍🎓 Étudiants</span></div>
+      <div class="menu-item"><span>📊 Notes</span></div>
+    </div>
+    <div class="menu-bottom">
+      <div class="menu-bottom-user">
+        <img src="https://i.pravatar.cc/32" alt="user">
+        <span>Admin</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu(button) {
+      button.classList.toggle("active");
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
